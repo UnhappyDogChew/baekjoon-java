@@ -56,6 +56,10 @@ public class Main {
                 Constructor<?> constructor = solutionClass.getConstructor();
                 Solution solution = (Solution)constructor.newInstance();
                 solution.solve();
+            } catch (ClassNotFoundException e) {
+                throw new RuntimeException("cannot find solution class");
+            } catch (NoSuchMethodException e) {
+                throw new RuntimeException("invalid solution class");
             } catch (Exception e) {
                 throw new RuntimeException(e);
             }
