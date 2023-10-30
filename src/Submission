@@ -1,0 +1,15 @@
+import java.io.*;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        Solution solution = new Submission();
+        solution.solve();
+    }
+}
+
+interface Solution {
+    void solve() throws IOException;
+}
+
+public class Submission implements Solution {
