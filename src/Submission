@@ -12,4 +12,4 @@ interface Solution {
     void solve() throws IOException;
 }
 
-public class Submission implements Solution {
+class Submission implements Solution {
